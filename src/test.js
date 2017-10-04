@@ -17,6 +17,7 @@ const driver = cabbie.default('taxirank', {
 
 driver.activeWindow.navigateTo('/')
 
+// Use data ids. Don't rely on position of element in DOM.
 const value = driver.activeWindow.getElement('[data-test-id="value"]')
 assert.equal(value.getAttribute('value'), '')
 
