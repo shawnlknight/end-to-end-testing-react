@@ -1,0 +1,23 @@
+{
+  "name": "e2e-testing-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "react-scripts": "1.0.14"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "cabbie-sync": "^0.10.7",
+    "chromedriver": "^2.32.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:e2e": "node src/test.js",
+    "eject": "react-scripts eject"
+  }
+}
