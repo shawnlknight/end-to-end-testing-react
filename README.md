@@ -21,6 +21,11 @@ In another terminal window run:
 npm run test:e2e
 ```
 
+## Types of tests
+- Static Analysis (eslint, flow)
+- JavaScript Tests (jest, tap, mocha)
+- End to End (webdriver, cabbie)
+
 ## Why End to End Tests?
 - Test what the real user would do
 - Expose browser inconsistencies
