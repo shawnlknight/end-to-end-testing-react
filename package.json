@@ -28,6 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:e2e": "node src/test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format":
+      "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.{js,jsx}"
   }
 }
