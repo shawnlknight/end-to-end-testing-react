@@ -6,12 +6,13 @@ body {
 
 header {
   text-align: center;
+  background-color: #111111;
+  padding: 40px;
+  color: #ff4136;
 }
 
-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
+h1 {
+  font-size: 3rem;
 }
 
 form {
@@ -43,7 +44,6 @@ input:focus {
 }
 button {
   align-items: flex-start;
-  background: lightgray;
   border: none;
   border-radius: 0.3em;
   box-sizing: border-box;
@@ -63,20 +63,21 @@ button {
   touch-action: manipulation;
   word-spacing: normal;
 
-  background: #309ef4;
+  background: #fa554c;
   /* keep 4px border-radius regardless of button size */
   border-radius: 4px;
-  color: white;
+  color: #f4f4f4;
 
   margin: 1em;
 }
 button:focus,
 button:hover {
   outline: none;
-  background: #2586d2;
+  background: #ff4136;
+  cursor: pointer;
 }
 button:active {
-  background: #1a6baa;
+  opacity: 1;
 }
 button:disabled {
   opacity: 0.5;

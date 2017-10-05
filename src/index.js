@@ -6,7 +6,7 @@ import App from './App'
 ReactDOM.render(
   <div>
     <header>
-      <h2>Reverser</h2>
+      <h1 data-test-id="heading">End to End Testing in React</h1>
     </header>
     <App />
   </div>,
