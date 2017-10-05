@@ -15,6 +15,20 @@ h1 {
   font-size: 3rem;
 }
 
+.react-logo {
+  animation: react-logo-spin infinite 15s linear;
+  height: 100px;
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 form {
   font-size: 2em;
   display: flex;

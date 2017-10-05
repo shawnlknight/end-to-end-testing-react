@@ -1,6 +1,12 @@
 const assert = require('assert')
 const cabbie = require('cabbie-sync')
 
+// Using taxirank
+const driver = cabbie.default('taxirank', {
+  base: 'http://localhost:3000',
+  debug: true
+})
+
 // Using chromedriver
 // cabbie.startChromedriver()
 
@@ -9,20 +15,13 @@ const cabbie = require('cabbie-sync')
 //   debug: true
 // })
 
-// Using taxirank
-const driver = cabbie.default('taxirank', {
-  base: 'http://localhost:3000',
-  debug: true
-})
-
 driver.activeWindow.navigateTo('/')
 
 // Simple assertion test
-// Note: Use data-test-id. Don't rely on position of element in DOM.
 const heading = driver.activeWindow.getElement('[data-test-id="heading"]')
 assert.equal(heading.getText(), 'End to End Testing in React')
 
-// Testing input
+// Testing reverser input
 const value = driver.activeWindow.getElement('[data-test-id="value"]')
 assert.equal(value.getAttribute('value'), '')
 
@@ -34,4 +33,5 @@ reverse.mouse.click()
 
 assert.equal(value.getAttribute('value'), 'dlroW olleH')
 
+// Comment out when using chromedriver to see result
 driver.dispose()
