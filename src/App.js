@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// Reverser function
 function reverser(value) {
   return value
     .split('')
