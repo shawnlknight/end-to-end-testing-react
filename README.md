@@ -1,4 +1,4 @@
-# End to End Testing React apps
+# End to End Testing React Apps
 
 Using [Cabbie](https://cabbiejs.org) for end-to-end testing of React apps.
 

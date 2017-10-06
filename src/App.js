@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 
+function reverser(value) {
+  return value
+    .split('')
+    .reverse()
+    .join('')
+}
+
 class App extends Component {
   state = { value: '' }
 
@@ -10,10 +17,7 @@ class App extends Component {
   _onSubmit = e => {
     e.preventDefault()
     this.setState(s => ({
-      value: s.value
-        .split('')
-        .reverse()
-        .join('')
+      value: reverser(s.value)
     }))
   }
 
