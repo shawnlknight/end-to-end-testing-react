@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import Reverser from './components/reverser/'
 import logo from './logo.svg'
 
 ReactDOM.render(
@@ -10,7 +10,7 @@ ReactDOM.render(
       <img src={logo} className="react-logo" alt="logo" />
       <h1 data-test-id="heading">End to End Testing in React</h1>
     </header>
-    <App />
+    <Reverser />
   </div>,
   document.getElementById('root')
 )

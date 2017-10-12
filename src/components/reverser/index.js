@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
+import reverse from '../../utils/reverse'
 
-// Reverse function
-function reverser(value) {
-  return value
-    .split('')
-    .reverse()
-    .join('')
-}
-
-class App extends Component {
+class Reverser extends Component {
   state = { value: '' }
 
   _onChange = e => {
@@ -17,9 +10,10 @@ class App extends Component {
 
   _onSubmit = e => {
     e.preventDefault()
-    this.setState(s => ({
-      value: reverser(s.value)
-    }))
+    const reversedVal = reverse(this.state.value)
+    this.setState({
+      value: reversedVal
+    })
   }
 
   render() {
@@ -36,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default Reverser
