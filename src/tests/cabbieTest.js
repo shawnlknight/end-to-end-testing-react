@@ -1,13 +1,13 @@
 const assert = require('assert')
 const cabbie = require('cabbie-sync')
 
-// Using taxirank
+/* Using taxirank */
 const driver = cabbie.default('taxirank', {
   base: 'http://localhost:3000',
   debug: true
 })
 
-// Using chromedriver
+/* Using chromedriver */
 // cabbie.startChromedriver()
 
 // const driver = cabbie.default('chromedriver', {
