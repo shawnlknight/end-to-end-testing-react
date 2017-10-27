@@ -13,9 +13,22 @@ puppeteer.launch().then(async browser => {
   await input.type('Hello World')
   await page.screenshot({ path: 'testscreenshot2.png' })
 
-  // After button click
+  // Button click
   await button.click()
   await page.screenshot({ path: 'testscreenshot3.png' })
+
+  const output = await page.evaluate(() => {
+    return document.querySelector('[data-test-id="value"]').value
+  })
+
+  console.log('output', output)
+
+  // Test it
+  if (output === 'dlroW olleH') {
+    console.log('\u2713 PASSED')
+  } else {
+    console.log('X FAILED')
+  }
 
   await browser.close()
 })
