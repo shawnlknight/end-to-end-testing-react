@@ -26,6 +26,13 @@ npm run test:cabbie
 
 ### To run Puppeteer tests
 
+In one terminal window run:
+```
+npm start
+```
+
+In another terminal window run:
+
 ```
 npm run test:puppet
 ```
