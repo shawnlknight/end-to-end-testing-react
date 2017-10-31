@@ -32,9 +32,9 @@ npm run test:puppet
 
 ## Types of tests
 
-- Static Analysis (eslint, flow)
+- Static Analysis (eslint, flow/typescript)
 - JavaScript Tests (jest, tap, mocha)
-- End to End (webdriver, cabbie)
+- End to End (webdriver, cabbie, puppeteer)
 
 ## Why End to End Tests?
 
