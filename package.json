@@ -32,7 +32,7 @@
     "test": "react-scripts test --env=jsdom",
     "test:cabbie": "node src/test/cabbieTest.js",
     "test:puppet":
-      "./node_modules/mocha/bin/mocha --timeout 15000 src/test/puppet.test.js src/test/puppet.test.js",
+      "./node_modules/mocha/bin/mocha --timeout 15000 src/test/puppet.test.js src/test/puppetTest.js",
     "eject": "react-scripts eject",
     "format":
       "./node_modules/.bin/prettier --single-quote --no-semi --write src/**/*.{js,jsx}"
