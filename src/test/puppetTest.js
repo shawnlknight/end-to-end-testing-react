@@ -10,7 +10,7 @@ describe('Reverse Function', function() {
   it('reverses string', async () => {
     const browser = await puppeteer.launch() //headless by default
     const page = await browser.newPage()
-    await page.goto('http://localhost:3001/')
+    await page.goto('http://localhost:3000/')
     const button = await page.$('[data-test-id="reverse"]')
     const input = await page.$('[data-test-id="value"]')
 
